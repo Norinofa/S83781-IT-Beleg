@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lernprogramm</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Evelyn Dietrich" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="learn"><h1>Lernprogramm</h1></div>
+    <header id="tabs" >
+      <div class="tabs">
+        <button onclick="tabshow('Mathe')">Mathe</button>
+        <button onclick="tabshow('Allgemeines')">Allgemeines</button>
+        <button onclick="tabshow('IT')">IT</button>
+        <button onclick="tabshow('External')">Externe Fragen</button>
+      </div>
+    </header>
+    <div class="exam" id="exam">
+      <section>
+        <div class="progress">
+          <div id="fortschritt"></div>
+        </div>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="score"></div>
+        <div id="qs">
+          <button id="frage">nächste Frage</button>
+        </div>
+      </section>
+    </div>
+    <footer><div id="start">APL</div></footer>
+
+    <script src="java.js"></script>
+  </body>
+</html>
